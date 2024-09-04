@@ -31,10 +31,7 @@ async function main() {
     0
   );
   await transaction.wait();
-  console.log(
-    "Transaction Response: ",
-    `Transfer token has been success! Transaction hash: https://explorer-evm.testnet.swisstronik.com/tx/${transaction.hash}`
-  );
+  console.log("Transaction Response: ", `Transfer token has been success! Transaction hash: https://explorer-evm.testnet.swisstronik.com/tx/${transaction.hash}`);
 }
 
 main().catch((error) => {
